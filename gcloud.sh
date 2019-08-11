@@ -11,6 +11,3 @@ tar zxvf google-cloud-sdk-257.0.0-linux-x86_64.tar.gz
 # Gcloud basic commands
 gcloud auth activate-service-account --key-file=/path/to/file.json
 gcloud config set project my-project
-# Delete version of app: ( -q flag quite, not ask)
-gcloud app versions delete 20180528t144522 -q
-gcloud app versions stop 20180528t144522 -q+
