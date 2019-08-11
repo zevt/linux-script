@@ -1,0 +1,18 @@
+# vagrant plugin install vagrant-vbguest
+# Error:  Ethernet Adapter #2' (VERR_INTNET_FLT_IF_NOT_FOUND)
+## Solution Control Panel > Network & Internet > Network Connections
+## located my VirtualBox Host-Only Network adapter, called VirtualBox Host-Only Network.
+## Right-clicked it and selected the Properties,
+## Checked the un-checked VirtualBox NDIS6
+## Bridged Networking Driver and started VirtualBox again.
+
+Resolve some error:
+  vagrant plugin install vagrant-vbguest
+  vagrant plugin install vagrant-disksize
+
+##
+Convert file composed on Windows to Unix file:
+  for one file:
+    dos2unix filename
+  or (for all files in current directory):
+    find . -type f -print0 | xargs -0 dos2unix
